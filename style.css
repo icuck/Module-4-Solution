@@ -16,7 +16,7 @@ p {
     font-family: cursive;
     font-size: 14px;
 }
-p.hover {
+p:hover {
     font-size: 18px
 }
 
