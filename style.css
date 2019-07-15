@@ -3,6 +3,23 @@
 ----iCuck Studios----
 ----------------------
 */
+h1 {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px; 
+}
+
+p {
+    font-family: cursive;
+    font-size: 14px;
+}
+p.hover {
+    font-size: 18px
+}
+
 #animated_Btn {
     color: #fff;
     border-radius: 30px;
