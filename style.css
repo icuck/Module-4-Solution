@@ -3,6 +3,8 @@
 ----iCuck Studios----
 ----------------------
 */
+
+/* Please do not copy my code directly, instead, please paraphrase it, sorry, I'm protective of this. */
 h1 {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
     font-size: 24px;
@@ -12,12 +14,23 @@ h1 {
     line-height: 26.4px; 
 }
 
-p {
+span {
     font-family: cursive;
     font-size: 14px;
 }
-p:hover {
-    font-size: 18px
+span:hover {
+    color: #484848;
+    background-color: gainsboro;
+}
+
+#animated_Btn:hover {
+    width: 205px;
+    height: 32px;
+    font-size: 21px;
+}
+
+.align-center {
+    text-align: center;
 }
 
 #animated_Btn {
@@ -29,18 +42,18 @@ p:hover {
     background-color: #f9a743;
     box-shadow: 0 30px 80px rgba(249, 167, 68, 0.5);
     background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
-    width:160px;
-    height: 100;
+    width:175px;
+    height: 30px;
     position: relative;
     font-weight:bold;
-    animation:animated_div 5s 1;
-    -moz-animation:animated_div 5s 1;
-    -webkit-animation:animated_div 5s 1;
-    -o-animation:animated_div 5s 1;
+    animation:animated_Btn 5s 1;
+    -moz-animation:animated_Btn 5s 1;
+    -webkit-animation:animated_Btn 5s 1;
+    -o-animation:animated_Btn 5s 1;
     -webkit-border-radius:5px;
 }
 
-@keyframes animated_div
+@keyframes animated_Btn
 {
 0% {transform: rotate(0deg);left:0px;}
 25% {transform: rotate(20deg);left:0px;}
@@ -50,7 +63,7 @@ p:hover {
 100% {transform: rotate(-360deg);left:0px;}
 }
 
-@-webkit-keyframes animated_div
+@-webkit-keyframes animated_Btn
 {
 0% {-webkit-transform: rotate(0deg);left:0px;}
 25% {-webkit-transform: rotate(20deg);left:0px;}
@@ -60,7 +73,7 @@ p:hover {
 100% {-webkit-transform: rotate(-360deg);left:0px;}
 }
 
-@-moz-keyframes animated_div
+@-moz-keyframes animated_Btn
 {
 0%  {-moz-transform: rotate(0deg);left:0px;}
 25% {-moz-transform: rotate(20deg);left:0px;}
@@ -70,7 +83,7 @@ p:hover {
 100% {-moz-transform: rotate(-360deg);left:0px;}
 }
 
-@-o-keyframes animated_div
+@-o-keyframes animated_Btn
 {
 0% {transform: rotate(0deg);left:0px;}
 25% {transform: rotate(20deg);left:0px;}
@@ -78,4 +91,28 @@ p:hover {
 55%  {transform: rotate(0deg);left:500px;}
 70%  {transform: rotate(0deg);left:500px;}
 100% {transform: rotate(-360deg);left:0px;}
+}
+
+h1 {
+  text-align: center;
+  overflow: hidden;
+  border-right: .15em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em; 
+  animation: 
+    typing-fx 3.5s steps(40, end),
+    cursor 0.75s step-end 1;
+}
+
+/* the typing*/
+@keyframes typing-fx {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
